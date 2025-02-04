@@ -1,0 +1,279 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #fb8c00;
+  --color-bg-1: #fff;
+  --color-bg-2: #fafafa;
+  --color-invert: #fff;
+  --color-text-1: #9e9e9e;
+  --color-text-2: #757575;
+  --color-text-3: #616161;
+  --color-text-4: #424242;
+  --color-border: #f5f5f5;
+}
+
+html {
+  height: 100%;
+  font-size: 12px;
+}
+
+body {
+  color: var(--color-text-4);
+  background: var(--color-bg-1);
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.holder {
+  min-height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.content {
+  width: 100%;
+  padding: 1rem;
+  background: var(--color-bg-2);
+  border-left: 1px solid var(--color-border);
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.aside {
+  height: 100%;
+  background: var(--color-bg-1);
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-item {
+  display: flex;
+  width: 100%;
+  padding: 0.25rem 1rem;
+  margin: 0.75rem 0;
+  color: #e0e0e0;
+}
+
+.menu-item:hover {
+  color: var(--color-primary);
+}
+
+.menu-item.active {
+  color: var(--color-primary);
+  border-right: 0.25rem solid var(--color-primary);
+}
+
+.menu-divider {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: var(--color-bg-1);
+  border-bottom: 1px solid var(--color-border);
+  padding: 0.5rem;
+  gap: 1rem;
+}
+
+.header-title {
+  color: var(--color-text-4);
+  font-size: 1.6rem;
+  font-weight: 600;
+  flex: 1;
+}
+
+.header-avatar {
+  width: 2.5em;
+  height: 2.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-invert);
+  background: var(--color-primary);
+  border-radius: 50%;
+  font-size: 1.2rem;
+  font-weight: 600;
+  overflow: hidden;
+}
+
+.header-user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.header-user-title {
+  color: var(--color-text-2);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.header-user-subtitle {
+  color: var(--color-text-1);
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.header-user-action {
+  color: #e53935;
+  margin: 0 0.5rem;
+}
+
+.portlet {
+  width: 100%;
+  padding: 1rem;
+  background: var(--color-bg-1);
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0px 0px 10px 2px var(--color-border);
+}
+
+.form-group {
+  flex: 1;
+  width: 100%;
+}
+
+.form-label {
+  display: block;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-text-3);
+  margin: 0.25rem 0;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-text-3);
+  background: var(--color-bg-1);
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: 0.35rem;
+  outline: 0;
+}
+
+.btn {
+  display: block;
+  color: var(--color-invert);
+  background: var(--color-primary);
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.65rem 3rem;
+  border-radius: 0.35rem;
+  border: 0;
+  outline: 0;
+}
+
+.grid {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.grid .portlet {
+  width: calc(25% - 0.75rem);
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+}
+
+.display-title {
+  color: var(--color-text-4);
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.display-subtitle {
+  color: var(--color-text-2);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.room {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.room-content {
+  flex: 1;
+}
+
+.room-title {
+  color: var(--color-text-2);
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.room-display {
+  color: var(--color-text-4);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.room-subtitle {
+  color: var(--color-text-1);
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-top: 0.5rem;
+}
+
+.room-chart {
+  max-width: 100% !important;
+}

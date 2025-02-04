@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-avatar">E</div>
+      <h1 class="header-title">Dashboard</h1>
+      <div class="header-user">
+        <div class="header-avatar">
+          <img src="./user.png" alt="User" />
+        </div>
+        <div class="header-user-content">
+          <h4 class="header-user-title">Teguh Ahmad Wijaya</h4>
+          <h5 class="header-user-subtitle">Admin</h5>
+        </div>
+        <a href="#" class="header-user-action">
+          <i data-feather="log-out" width="20"></i>
+        </a>
+      </div>
+    </header>
+    <section class="holder">
+      <aside class="aside">
+        <div class="menu">
+          <a href="#" class="menu-item">
+            <i data-feather="home"></i>
+          </a>
+          <hr class="menu-divider" />
+          <a href="#" class="menu-item active">
+            <i data-feather="layout"></i>
+          </a>
+          <a href="#" class="menu-item">
+            <i data-feather="inbox"></i>
+          </a>
+          <a href="#" class="menu-item">
+            <i data-feather="layers"></i>
+          </a>
+          <a href="#" class="menu-item">
+            <i data-feather="mail"></i>
+          </a>
+          <a href="#" class="menu-item">
+            <i data-feather="lock"></i>
+          </a>
+        </div>
+      </aside>
+      <main class="content">
+        <div class="portlet">
+          <form class="container">
+            <div class="form-group">
+              <label class="form-label" for="start-date">Start Date</label>
+              <input
+                type="date"
+                class="form-control"
+                id="start-date"
+                placeholder="Select date"
+              />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="start-date">Start Date</label>
+              <input
+                type="date"
+                class="form-control"
+                id="start-date"
+                placeholder="Select date"
+              />
+            </div>
+            <button type="submit" class="btn">Search</button>
+          </form>
+        </div>
+        <div class="container">
+          <div class="portlet">
+            <div class="display">
+              <p class="display-subtitle">Total Omzet</p>
+              <h3 class="display-title">Rp 8.000.000</h3>
+            </div>
+          </div>
+          <div class="portlet">
+            <div class="display">
+              <p class="display-subtitle">Total Reservations</p>
+              <h3 class="display-title">100</h3>
+            </div>
+          </div>
+          <div class="portlet">
+            <div class="display">
+              <p class="display-subtitle">Total Visitor</p>
+              <h3 class="display-title">500</h3>
+            </div>
+          </div>
+          <div class="portlet">
+            <div class="display">
+              <p class="display-subtitle">Total Rooms</p>
+              <h3 class="display-title">12</h3>
+            </div>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="portlet">
+            <div class="room">
+              <div class="room-content">
+                <h3 class="room-title">Aster Room</h3>
+                <p class="room-subtitle">Percentage of Usage</p>
+                <h4 class="room-display">80%</h4>
+                <p class="room-subtitle">Omzet</p>
+                <h4 class="room-display">Rp 2.000.000</h4>
+              </div>
+              <div class="room-addon">
+                <div class="room-chart" data-value="75"></div>
+              </div>
+            </div>
+          </div>
+          <div class="portlet">
+            <div class="room">
+              <div class="room-content">
+                <h3 class="room-title">Bluebell Room</h3>
+                <p class="room-subtitle">Percentage of Usage</p>
+                <h4 class="room-display">80%</h4>
+                <p class="room-subtitle">Omzet</p>
+                <h4 class="room-display">Rp 2.000.000</h4>
+              </div>
+              <div class="room-addon">
+                <div class="room-chart" data-value="75"></div>
+              </div>
+            </div>
+          </div>
+          <div class="portlet">
+            <div class="room">
+              <div class="room-content">
+                <h3 class="room-title">Camellia Room</h3>
+                <p class="room-subtitle">Percentage of Usage</p>
+                <h4 class="room-display">80%</h4>
+                <p class="room-subtitle">Omzet</p>
+                <h4 class="room-display">Rp 2.000.000</h4>
+              </div>
+              <div class="room-addon">
+                <div class="room-chart" data-value="75"></div>
+              </div>
+            </div>
+          </div>
+          <div class="portlet">
+            <div class="room">
+              <div class="room-content">
+                <h3 class="room-title">Camellia Room</h3>
+                <p class="room-subtitle">Percentage of Usage</p>
+                <h4 class="room-display">80%</h4>
+                <p class="room-subtitle">Omzet</p>
+                <h4 class="room-display">Rp 2.000.000</h4>
+              </div>
+              <div class="room-addon">
+                <div class="room-chart" data-value="75"></div>
+              </div>
+            </div>
+          </div>
+          <div class="portlet">
+            <div class="room">
+              <div class="room-content">
+                <h3 class="room-title">Aster Room</h3>
+                <p class="room-subtitle">Percentage of Usage</p>
+                <h4 class="room-display">80%</h4>
+                <p class="room-subtitle">Omzet</p>
+                <h4 class="room-display">Rp 2.000.000</h4>
+              </div>
+              <div class="room-addon">
+                <div class="room-chart" data-value="75"></div>
+              </div>
+            </div>
+          </div>
+          <div class="portlet">
+            <div class="room">
+              <div class="room-content">
+                <h3 class="room-title">Bluebell Room</h3>
+                <p class="room-subtitle">Percentage of Usage</p>
+                <h4 class="room-display">80%</h4>
+                <p class="room-subtitle">Omzet</p>
+                <h4 class="room-display">Rp 2.000.000</h4>
+              </div>
+              <div class="room-addon">
+                <div class="room-chart" data-value="75"></div>
+              </div>
+            </div>
+          </div>
+          <div class="portlet">
+            <div class="room">
+              <div class="room-content">
+                <h3 class="room-title">Camellia Room</h3>
+                <p class="room-subtitle">Percentage of Usage</p>
+                <h4 class="room-display">80%</h4>
+                <p class="room-subtitle">Omzet</p>
+                <h4 class="room-display">Rp 2.000.000</h4>
+              </div>
+              <div class="room-addon">
+                <div class="room-chart" data-value="75"></div>
+              </div>
+            </div>
+          </div>
+          <div class="portlet">
+            <div class="room">
+              <div class="room-content">
+                <h3 class="room-title">Camellia Room</h3>
+                <p class="room-subtitle">Percentage of Usage</p>
+                <h4 class="room-display">80%</h4>
+                <p class="room-subtitle">Omzet</p>
+                <h4 class="room-display">Rp 2.000.000</h4>
+              </div>
+              <div class="room-addon">
+                <div class="room-chart" data-value="75"></div>
+              </div>
+            </div>
+          </div>
+          <div class="portlet">
+            <div class="room">
+              <div class="room-content">
+                <h3 class="room-title">Aster Room</h3>
+                <p class="room-subtitle">Percentage of Usage</p>
+                <h4 class="room-display">80%</h4>
+                <p class="room-subtitle">Omzet</p>
+                <h4 class="room-display">Rp 2.000.000</h4>
+              </div>
+              <div class="room-addon">
+                <div class="room-chart" data-value="75"></div>
+              </div>
+            </div>
+          </div>
+          <div class="portlet">
+            <div class="room">
+              <div class="room-content">
+                <h3 class="room-title">Bluebell Room</h3>
+                <p class="room-subtitle">Percentage of Usage</p>
+                <h4 class="room-display">80%</h4>
+                <p class="room-subtitle">Omzet</p>
+                <h4 class="room-display">Rp 2.000.000</h4>
+              </div>
+              <div class="room-addon">
+                <div class="room-chart" data-value="75"></div>
+              </div>
+            </div>
+          </div>
+          <div class="portlet">
+            <div class="room">
+              <div class="room-content">
+                <h3 class="room-title">Camellia Room</h3>
+                <p class="room-subtitle">Percentage of Usage</p>
+                <h4 class="room-display">80%</h4>
+                <p class="room-subtitle">Omzet</p>
+                <h4 class="room-display">Rp 2.000.000</h4>
+              </div>
+              <div class="room-addon">
+                <div class="room-chart" data-value="75"></div>
+              </div>
+            </div>
+          </div>
+          <div class="portlet">
+            <div class="room">
+              <div class="room-content">
+                <h3 class="room-title">Camellia Room</h3>
+                <p class="room-subtitle">Percentage of Usage</p>
+                <h4 class="room-display">80%</h4>
+                <p class="room-subtitle">Omzet</p>
+                <h4 class="room-display">Rp 2.000.000</h4>
+              </div>
+              <div class="room-addon">
+                <div class="room-chart" data-value="75"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+    <script>
+      feather.replace();
+    </script>
+    <script>
+      const chartColor = "#FB8C00";
+      const labelColor = "Room";
+
+      function renderChart(container, value, color) {
+        const options = {
+          series: [100 - value, value],
+          chart: {
+            type: "donut",
+            width: 100,
+          },
+          labels: [],
+          colors: ["#F5F5F5", color],
+          plotOptions: {
+            pie: {
+              donut: {
+                size: "70%",
+                labels: {
+                  show: false,
+                },
+              },
+            },
+          },
+          legend: {
+            show: false,
+          },
+          tooltip: {
+            enabled: false,
+          },
+          dataLabels: {
+            enabled: false,
+          },
+        };
+
+        const chart = new ApexCharts(container, options);
+        chart.render();
+      }
+
+      const roomCharts = document.querySelectorAll(".room-chart");
+
+      roomCharts.forEach((element) => {
+        const value = parseFloat(element.getAttribute("data-value"));
+        renderChart(element, value, chartColor, labelColor);
+      });
+    </script>
+  </body>
+</html>
